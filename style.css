@@ -10,3 +10,14 @@ html {
     box-sizing: inherit;
 }
 
+body{
+    color: #eeeeee;
+}
+
+h1{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 3vw;
+    font-weight: 600;
+    color: orange;
+}

@@ -4,7 +4,7 @@ const background = document.getElementById("background"),
     bkgWidth = background.width,
     bkgHeight = background.height;
 
-// This is the html tag, we use this in order to retreive the current scroll position (in pixels?)
+// Retrieve the current scroll position
 const mainContainer = document.getElementById("GrandMainParent"),
     maxScroll = mainContainer.scrollHeight - mainContainer.clientHeight;
 
@@ -18,10 +18,10 @@ let bkgR = colorInterpolation[0].r,
     bkgG = colorInterpolation[0].g,
     bkgB = colorInterpolation[0].b;
 
-// Init the color of the canvas (by default it got colored only after scrolling)
+// Init the color of the canvas
 bkgContext.fillStyle = "rgb(" + bkgR + "," + bkgG + "," + bkgB + ")";
 bkgContext.fillRect(0, 0, bkgWidth, bkgHeight);
-// Init the scroll position as well (chrome like to keep the old scrolling position after refreshing) (when resetting it's smooth scrolling)
+// Init the scroll position
 window.scrollTo(0, 0);
 
 // Function that is supposed to return the interpollated color based on whatever scrolling position you are at
@@ -65,10 +65,8 @@ throttle.textContent = "Throttle: 0.25 MW";
 acceleration.textContent = "Acceleration: 100 m/s";
 speed.textContent = "Speed: 0 m/s";
 title.textContent = "Getting ready";
-// INIT THE OTHERS AS WELL
 
 //variable.toFixed(number of digits)
-//partea intreaga <=> Math.floor(numar)
 window.onscroll = function () {
     // this is called when the user scrolls
 
@@ -85,9 +83,6 @@ window.onscroll = function () {
     fuel.textContent = "Fuel: " + integerMap(mainContainer.scrollTop, 0, maxScroll, 100, 60).toFixed(2) + "%";
 
     //advanced interpolations:
-    //14.69
-    //3.4
-    //0.088
     if(mainContainer.scrollTop < maxScroll / 100 * 4)
         atmosphere.textContent = "Atmosphere: 14.69 psi";
     else if(mainContainer.scrollTop > maxScroll / 100 * 4){

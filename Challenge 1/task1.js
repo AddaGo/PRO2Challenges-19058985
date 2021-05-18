@@ -55,7 +55,15 @@ let food = document.getElementById("food"),
     acceleration = document.getElementById("acceleration"),
     speed = document.getElementById("speed");
 
+food.textContent = "Food: 3000.00 kg";
+water.textContent = "Water: 1140.00 L";
+gravity.textContent = "Gravity: 9,807 N";
+distance.textContent = "Distance: 54.60 million km";
 atmosphere.textContent = "Atmosphere: 14.69 psi";
+fuel.textContent = "Fuel: 100.00%";
+throttle.textContent = "Throttle: 0.25 MW";
+acceleration.textContent = "Acceleration: 100 m/s";
+speed.textContent = "Speed: 0 m/s";
 // INIT THE OTHERS AS WELL
 
 //variable.toFixed(number of digits)

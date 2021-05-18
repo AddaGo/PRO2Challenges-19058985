@@ -1,0 +1,126 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    /* scrolling between elements (anchors) is now smooth (MAC NOT SUPPORTED, MAC LIKES TELEPORTAISHUN) */
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera without disabling functionality */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox without disabling functionality */
+html {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+@font-face {
+    font-family: Andromeda;
+    src: url(Andromeda-eR2n.ttf);
+}
+
+.spaceship img{
+    z-index: 100;
+    opacity: 20%;
+    position:fixed;
+    top: 17%;
+    left: 32%;
+}
+
+.spacex img{
+    z-index: 100;
+    position:fixed;
+    top: 90%;
+    left: 2%;
+    height:5%;
+}
+
+#main-container {
+    color:#ffffff;
+    position: relative;
+
+    width: 100vw;
+    height: 500vh;
+
+    background-color: lightgray;
+    z-index: 99;
+}
+
+#background {
+    /* it's fixed because it is only the size of the screen, always at the bottom */
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+ 
+}
+
+.margin-less{
+    margin-top: 0;
+}
+
+
+/* Information grouping */
+#Supplies {
+    font-family: Andromeda;
+    font-size: 2vw;
+    position: fixed; 
+    top: 3%;
+    left: 8.33%;
+
+    /* background-color: lime; */
+    width: 25%;
+    height: 30%;
+}
+
+#Environment {
+    font-family: Andromeda;
+    font-size: 2vw;
+    position: fixed;
+    top: 3%;
+    left: 58.31%;
+
+    /* background-color: lime; */
+    height: 30%;
+    width: 33.33%;
+}
+
+#Parameters {
+    font-family: Andromeda;
+    font-size: 2vw;
+    position: fixed;
+    top: 55%;
+    left: 8.33%;
+
+    /* background-color: lime; */
+    height: 30%;
+    width: 83.34%;
+}
+
+#Title {
+    font-family: Andromeda;
+    font-size: 4vw;
+    font-weight: bold;
+
+    position: fixed;
+    top: 40%;
+    left: 25%;
+
+    /* background-color: lime; */
+    height: 10%;
+    width: 50%;
+}
+
+/* Centering text in each group */
+.group-div > p{
+    text-align: center;
+    position: relative;
+    top:25%;
+    transform: translate(0, 25%);
+
+    z-index: 1;
+}

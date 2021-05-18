@@ -64,6 +64,7 @@ fuel.textContent = "Fuel: 100.00%";
 throttle.textContent = "Throttle: 0.25 MW";
 acceleration.textContent = "Acceleration: 100 m/s";
 speed.textContent = "Speed: 0 m/s";
+title.textContent = "Getting ready";
 // INIT THE OTHERS AS WELL
 
 //variable.toFixed(number of digits)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Challenge 3 - Landing Site </title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css' rel='stylesheet'/>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+
+</head>
+
+
+<body>
+    <div class="backgroundimage"> <img src="backgroundimage.jpg"> </div>
+
+    <div class="inputpanel">
+        <div class="label"> Location input </div>
+        <input class="inputfield" id="input"> </input>
+        <div class="button" id="button"> ENTER </div>
+    </div>
+
+    <div class="titlepanel"> 
+        <div class="label" style="top:58px; left:555px; font-size:28px;"> Now landing </div>
+    </div>
+    <div class="mapspanel" >
+        <div class="actualmap" id="mapspanel"></div>
+    </div>
+    <div class="weatherpanel">
+        <div class="label" style="top:510px; left:1180px; font-size:28px;"> Weather Info </div>
+        <div class="weatherinformation" id="weather"> </div>
+        <div class="weatherinformation" id="moreweather"></div>
+    </div>
+
+</body>
+
+
+<script src="main.js"></script>
+</html>

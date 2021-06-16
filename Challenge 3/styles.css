@@ -1,0 +1,137 @@
+body{
+    margin:0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Andromeda;
+    src: url(Andromeda-eR2n.ttf);
+}
+
+.backgroundimage {
+    width: 100%;
+    height:100%;
+}
+
+.backgroundimage img{
+    width: 100%;
+    height: 100%;
+    /* filter: blur(10px); */
+}
+
+.inputpanel{
+    position: fixed;
+    top:50px;
+    left:-22px;
+    height: 150px;
+    width: 570px;
+    background-color: orange;
+    clip-path: polygon(23.00% 0.00%,81.00% 0.00%,87.00% 11.00%,87% 100%,23.00% 100.00%);
+}
+
+.inputfield{
+    position: fixed;
+    top:105px;
+    left: 135px;
+    height: 30px;
+    width: 305px;
+    background-color: #171717;
+
+    font-family: Andromeda;
+    font-size: 27px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.label{
+    position: fixed;
+    top: 65px;
+    left: 140px;
+
+    font-family: Andromeda;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#input{
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.button{
+    position: fixed;
+    top:155px;
+    left: 350px;
+    height: 27px;
+    width: 100px;
+    background-color: #171717;
+
+    padding-top:3px;
+    font-family: Andromeda;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+.titlepanel{
+    position: fixed;
+    top:20px;
+    left:550px;
+    height: 250px;
+    width: 240px;
+    background-color: orange;
+    clip-path: polygon(0% 12%,95.00% 12.00%,74.00% 28.00%,0.00% 28.00%);
+}
+
+.mapspanel{
+    position: fixed;
+    top:52px;
+    left:550px;
+    height: 550px;
+    width: 850px;
+    background-color: orange;
+    clip-path: polygon(0.00% 10.00%,22.00% 10.00%,26.00% 7.00%,96.00% 7.00%,99.00% 9.00%,99.00% 51.00%,100.00% 56.00%,100.00% 79.00%,72.00% 79.00%,67.00% 83.00%,21.00% 83.00%,0.00% 63.00%);
+}
+
+.actualmap{
+    height: 550px;
+    width: 850px;
+}
+
+.weatherpanel{
+    position: fixed;
+    top:500px;
+    left:730px;
+    height: 225px;
+    width: 670px;
+    background-color: orange;
+    clip-path: polygon(0.00% 12.00%,58.00% 12.00%,64.00% 3.00%,100.00% 3.00%,100.00% 68.00%,97.00% 76.00%,0.00% 76.00%);
+}
+
+.weatherinformation{
+    position: fixed;
+    top: 560px;
+    left: 760px;
+
+    font-family: Andromeda;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+#moreweather{
+    position: fixed;
+    top: 555px;
+    left: 1100px;
+
+    font-family: Andromeda;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
